@@ -10,9 +10,10 @@
 
   <body>
 
-    <%= link_to "Home", root_path %>
-    <%= link_to "Log In", login_path %>
-    <%= link_to "Sign Up", signup_path %>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
